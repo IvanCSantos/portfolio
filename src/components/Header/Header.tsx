@@ -1,9 +1,10 @@
 import React from "react";
+// import logo2 from "../../assets/logo2.svg";
 
 export const Header = () => {
   return (
     <header>
-      <div>LOGO</div>
+      <div>{/* <img src={logo2} /> */}</div>
       <div>
         <ul>
           <li>Sobre</li>
