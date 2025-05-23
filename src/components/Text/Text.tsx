@@ -2,11 +2,12 @@ import React, { type ReactElement } from "react";
 
 const textVariants = {
   default: "text-xl",
-  title1: "text-3xl font-[--font-primary]",
-  title2: "text-2xl font-[--font-primary]",
-  title3: "text-xl font-[--font-primary]",
-  paragraph: "text-xl font-[--font-secondary]",
-  muted: "text-xl font-[--font-secondary] text-(--text-muted)",
+  title1: "text-3xl",
+  title2: "text-2xl",
+  title3: "text-xl",
+  paragraph: "h-16",
+  muted: "text-xl",
+  siteTitle: "text-[4rem]",
 };
 
 export const Text = ({
@@ -17,7 +18,14 @@ export const Text = ({
   ...props
 }: {
   as: string;
-  variant: "default" | "title1" | "title2" | "title3" | "paragraph" | "muted";
+  variant:
+    | "default"
+    | "title1"
+    | "title2"
+    | "title3"
+    | "paragraph"
+    | "muted"
+    | "siteTitle";
   children: string;
   className?: string;
 }) => {

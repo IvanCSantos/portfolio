@@ -33,12 +33,12 @@ function App() {
   return (
     <>
       <Header lang={lang} changeLang={handleChangeLang} />
-      <main>
+      <main className="max-w-[1400px] lg:w-[1400px] mx-auto">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/curriculum" element={<Curriculum />} />
+          <Route path="/" element={<Home lang={lang} />} />
+          <Route path="/about" element={<About lang={lang} />} />
+          <Route path="/career" element={<Career lang={lang} />} />
+          <Route path="/curriculum" element={<Curriculum lang={lang} />} />
         </Routes>
       </main>
     </>

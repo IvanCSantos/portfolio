@@ -1,24 +1,43 @@
 import React from "react";
 import { Text } from "../../components/Text/Text";
+import { ptBR, en } from "../../config/texts.ts";
+import type { Language } from "../../config/types.js";
 
-export const Home = () => {
+interface HomeProps {
+  lang: Language;
+}
+
+export const Home: React.FC<HomeProps> = ({ lang }) => {
   return (
-    <div className="m-12">
-      <Text as="h1" variant="title1" className="font-bold bg-amber-400">
-        Home
-      </Text>
-      <Text as="h2" variant="title2">
-        Home
-      </Text>
-      <Text as="h3" variant="title3">
-        Home
-      </Text>
-      <Text as="p" variant="paragraph">
-        Home
-      </Text>
-      <Text as="p" variant="muted">
-        Home
-      </Text>
+    <div className="mt-24">
+      <section className="flex flex-col mt-36">
+        <Text as="h1" variant="siteTitle" className="font-bold mx-auto">
+          {lang === "ptBR"
+            ? ptBR.home.siteTitle.toUpperCase()
+            : en.home.siteTitle.toUpperCase()}
+        </Text>
+        <Text as="h2" variant="title2" className="font-bold mx-auto">
+          {lang === "ptBR"
+            ? ptBR.home.professionalTitle
+            : en.home.professionalTitle}
+        </Text>
+      </section>
+      <section className="flex flex-col mt-36">
+        <Text
+          as="p"
+          variant="paragraph"
+          className="w-1/2 h-fit p-4 mx-auto text-justify"
+        >
+          {lang === "ptBR" ? ptBR.home.descriptionP1 : en.home.descriptionP1}
+        </Text>
+        <Text
+          as="p"
+          variant="paragraph"
+          className="w-1/2 h-fit p-4 mx-auto text-justify"
+        >
+          {lang === "ptBR" ? ptBR.home.descriptionP2 : en.home.descriptionP2}
+        </Text>
+      </section>
     </div>
   );
 };
