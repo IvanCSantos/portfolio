@@ -8,6 +8,7 @@ const textVariants = {
   paragraph: "h-16",
   muted: "text-xl",
   siteTitle: "text-[4rem]",
+  listItem: "text-[1rem]",
 };
 
 export const Text = ({
@@ -25,7 +26,8 @@ export const Text = ({
     | "title3"
     | "paragraph"
     | "muted"
-    | "siteTitle";
+    | "siteTitle"
+    | "listItem";
   children: string;
   className?: string;
 }) => {
