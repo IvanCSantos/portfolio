@@ -1,10 +1,14 @@
 import React from "react";
 
-interface LinkProps {
+interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   url: string;
   children: React.ReactNode;
 }
 
-export const Link: React.FC<LinkProps> = ({ url, children }) => {
-  return <a href={url}>{children}</a>;
+export const Link: React.FC<LinkProps> = ({ url, children, ...props }) => {
+  return (
+    <a href={url} {...props}>
+      {children}
+    </a>
+  );
 };

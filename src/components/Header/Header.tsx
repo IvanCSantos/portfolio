@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo_preto.svg";
 import { Link } from "react-router";
+import { Link as Anchor } from "../../components/Link/Link";
 import { ptBR, en } from "../../config/texts.ts";
 import { Button } from "../Button/Button";
 import type { Language } from "../../config/types.js";
@@ -13,6 +14,8 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
+  const cvUrl = lang === "ptBR" ? "curriculo.pdf" : "resume.pdf";
+
   return (
     <header className="flex flex-row w-full h-24">
       <div className="max-w-[1400px] lg:w-[1400px] flex flex-row h-full mx-auto">
@@ -54,13 +57,26 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
               </Link>
             </li>
             <li className="h-full">
-              <Link to="/curriculum" className="px-4 align-middle h-full">
+              {/* <Link to="/curriculum" className="px-4 align-middle h-full">
                 <Text as="h3" variant="title3">
                   {lang === "ptBR"
                     ? ptBR.header.curriculum.toUpperCase()
                     : en.header.curriculum.toUpperCase()}
                 </Text>
-              </Link>
+              </Link> */}
+              <Anchor
+                url={cvUrl}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 align-middle h-full"
+              >
+                <Text as="h3" variant="title3">
+                  {lang === "ptBR"
+                    ? ptBR.header.curriculum.toUpperCase()
+                    : en.header.curriculum.toUpperCase()}
+                </Text>
+              </Anchor>
             </li>
           </ul>
         </div>
