@@ -10,15 +10,19 @@ interface CareerProps {
 export const Career: React.FC<CareerProps> = ({ lang }) => {
   const texts = lang === "ptBR" ? ptBR : en;
 
-  return texts.career.map((job) => {
-    return (
-      <Experience
-        key={job.date}
-        date={job.date}
-        title={job.title}
-        company={job.company}
-        experience={job.experience}
-      />
-    );
-  });
+  return (
+    <div className="mt-24 ">
+      {texts.career.map((job) => {
+        return (
+          <Experience
+            key={job.date}
+            date={job.date}
+            title={job.title}
+            company={job.company}
+            experience={job.experience}
+          />
+        );
+      })}
+    </div>
+  );
 };

@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from "react-router";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Career } from "./pages/Carreer/Career";
+import { Projects } from "./pages/Projects/Projects";
 import { Curriculum } from "./pages/Curriculum/Curriculum";
 import type { Language } from "./config/types";
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home lang={lang} />} />
           <Route path="/about" element={<About lang={lang} />} />
           <Route path="/career" element={<Career lang={lang} />} />
+          <Route path="/projects" element={<Projects lang={lang} />} />
           <Route path="/curriculum" element={<Curriculum lang={lang} />} />
         </Routes>
       </main>

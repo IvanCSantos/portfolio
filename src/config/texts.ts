@@ -55,7 +55,54 @@ export const ptBR = {
       ],
     },
   ],
-  projects: {},
+  projects: {
+    highlights: [
+      {
+        name: "Ivan Santos - Portfolio",
+        description: "Este portfólio que você está vendo",
+        tags: ["React", "Typescript", "Javascript", "Tailwind CSS"],
+        github: "https://github.com/IvanCSantos/portfolio",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+    ],
+    others: [
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+    ],
+  },
   curriculum: {},
 };
 
@@ -114,6 +161,53 @@ export const en = {
       ],
     },
   ],
-  projects: {},
+  projects: {
+    highlights: [
+      {
+        name: "Ivan Santos - Portfolio",
+        description: "Este portfólio que você está vendo",
+        tags: ["React", "Typescript", "Javascript", "Tailwind CSS"],
+        github: "https://github.com/IvanCSantos/portfolio",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+    ],
+    others: [
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+      {
+        name: "",
+        description: "",
+        tags: ["", ""],
+        github: "",
+        liveUrl: "",
+      },
+    ],
+  },
   curriculum: {},
 };

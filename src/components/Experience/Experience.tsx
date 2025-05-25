@@ -15,21 +15,21 @@ export const Experience: React.FC<ExperienceProps> = ({
   experience,
 }) => {
   return (
-    <div className="mt-24">
-      <article className="flex flex-row gap-4">
-        <div className="min-w-64">
-          <Text as="span" variant="muted">
+    <div className="mt-16">
+      <article className="grid grid-cols-[1fr_2fr] justify-center gap-8">
+        <div className="text-right">
+          <Text as="span" variant="muted" className="font-extralight">
             {date}
           </Text>
         </div>
-        <div>
-          <Text as="h3" variant="title3">
+        <div className="flex flex-col gap-4">
+          <Text as="h2" variant="title2" className="font-extrabold">
             {`${title} @ ${company}`}
           </Text>
           <ul>
             {experience &&
               experience.map((xp) => (
-                <Text key={xp} as="li" variant="listItem">
+                <Text key={xp} as="li" variant="listItem" className="">
                   {xp}
                 </Text>
               ))}

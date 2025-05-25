@@ -1,14 +1,14 @@
 import React, { type ReactElement } from "react";
 
 const textVariants = {
-  default: "text-xl",
+  default: "text-base",
   title1: "text-3xl",
   title2: "text-2xl",
   title3: "text-xl",
-  paragraph: "h-16",
-  muted: "text-xl",
-  siteTitle: "text-[4rem]",
-  listItem: "text-[1rem]",
+  paragraph: "text-base",
+  muted: "text-base",
+  siteTitle: "text-lg",
+  listItem: "text-base list-disc",
 };
 
 export const Text = ({
