@@ -9,6 +9,7 @@ const textVariants = {
   muted: "text-base",
   siteTitle: "text-lg",
   listItem: "text-base list-disc",
+  link: "text-base cursor-pointer underline underline-offset-2",
 };
 
 export const Text = ({
@@ -18,8 +19,8 @@ export const Text = ({
   children,
   ...props
 }: {
-  as: string;
-  variant:
+  as?: string;
+  variant?:
     | "default"
     | "title1"
     | "title2"
@@ -27,7 +28,8 @@ export const Text = ({
     | "paragraph"
     | "muted"
     | "siteTitle"
-    | "listItem";
+    | "listItem"
+    | "link";
   children: string;
   className?: string;
 }) => {

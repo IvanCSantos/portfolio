@@ -13,20 +13,32 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
 
   return (
     <div className="mt-24 px-16">
-      <Text as="h2" variant="title2" className="mb-8">
+      <Text as="h2" variant="title2" className="mb-4">
         Projetos em destaque
       </Text>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-8">
         {texts.projects.highlights.map((project) => (
-          <Card />
+          <Card
+            title={project.name}
+            description={project.description}
+            tags={project.tags}
+            github={project.github}
+            liveUrl={project.liveUrl}
+          />
         ))}
       </div>
-      <Text as="h2" variant="title2" className="mb-8">
+      <Text as="h2" variant="title2" className="mt-16 mb-4">
         Outros projetos
       </Text>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-8">
         {texts.projects.others.map((project) => (
-          <Card />
+          <Card
+            title={project.name}
+            description={project.description}
+            tags={project.tags}
+            github={project.github}
+            liveUrl={project.liveUrl}
+          />
         ))}
       </div>
     </div>
