@@ -1,5 +1,3 @@
-import type { Experience } from "../components/Experience/Experience";
-
 export const ptBR = {
   header: {
     about: "Sobre",

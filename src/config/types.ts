@@ -1,1 +1,1 @@
-export type Language = "ptBR" | "en";
+export type Language = "ptBR" | "en" | null;

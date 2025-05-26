@@ -1,4 +1,3 @@
-import React from "react";
 import { Text } from "../../Text/Text";
 import { Tag } from "../../Tag/Tag";
 import { Link } from "../../Link/Link";
