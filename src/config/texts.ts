@@ -15,8 +15,25 @@ export const ptBR = {
   },
   about: {
     textContent: [
-      "Sou estudante de Ciência da Computação e possuo mais de 12 anos deexperiência em TI, incluindo atuação como Analista de TI em empresamultinacional, gerenciando infraestrutura no Brasil, EUA e Colômbia.Tenho sólida base em servidores, redes, automação e cloud.",
-      "Atualmente, foco minha transição para o Desenvolvimento Web FullStack, estudando Java Spring Boot e React por meio de cursos práticos(Rocketseat, Origamid, Alura, Algaworks, EBAC) e projetos reais, comoum sistema frontend que estou desenvolvendo para a ACATE viaUNIVALI.",
+      "Olá, me chamo Ivan, tenho 36 anos.",
+      "Sou estudante de Ciência da Computação e possuo mais de 12 anos de experiência em TI, incluindo atuação como Analista de TI em empresa multinacional, gerenciando infraestrutura no Brasil, EUA e Colômbia. Tenho sólida base em servidores, redes, automação e cloud.",
+      "Atualmente, foco minha transição para o Desenvolvimento Web FullStack, estudando Java Spring Boot e React por meio de cursos práticos (Rocketseat, Origamid, Alura, Algaworks, EBAC) e projetos reais, como um sistema frontend que estou desenvolvendo para a ACATE via UNIVALI.",
+    ],
+    undergratuateDegree: {
+      course: "Bacharel em Ciência da Computação",
+      institution: "UNIVALI",
+      date: "conclusão em 2025",
+    },
+    courses: [
+      { course: "Formação ReactJs", school: "Rocketseat", hours: "19h" },
+      { course: "React completo", school: "Origamid", hours: "18h" },
+      { course: "React com Typescript", school: "Origamid", hours: "5h" },
+      { course: "Especialista Java", school: "Algaworks", hours: "89h" },
+      {
+        course: "Formação Java Web Spring Boot",
+        school: "Alura",
+        hours: "40h",
+      },
     ],
   },
   career: [
@@ -125,8 +142,25 @@ export const en = {
   },
   about: {
     textContent: [
+      "Hi, my name is Ivan, I’m 36 years old.",
       "I am a Computer Science student and have more than 12 years of experience in IT, including working as an IT Analyst in a multinational company, managing infrastructure in Brazil, USA and Colombia. I have a solid foundation in servers, networks, automation and cloud.",
       "Currently, I focus on my transition to FullStack Web Development, studying Java Spring Boot and React through practical courses and real projects, such as a frontend system that I am developing for ACATE via UNIVALI.",
+    ],
+    undergratuateDegree: {
+      course: "Bachelor of Science in Computer Science",
+      institution: "UNIVALI",
+      date: "expected graduation in 2025",
+    },
+    courses: [
+      { course: "ReactJs Course", school: "Rocketseat", hours: "19h" },
+      { course: "Complete ReactJs", school: "Origamid", hours: "18h" },
+      { course: "React with Typescript", school: "Origamid", hours: "5h" },
+      { course: "Java specialist", school: "Algaworks", hours: "89h" },
+      {
+        course: "Java Spring Boot Web Training",
+        school: "Alura",
+        hours: "40h",
+      },
     ],
   },
   career: [
