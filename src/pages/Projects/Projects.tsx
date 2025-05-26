@@ -14,7 +14,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
   return (
     <div className="mt-24 px-16">
       <Text as="h2" variant="title2" className="mb-4">
-        Projetos em destaque
+        {lang === "ptBR" ? "Projetos em destaque" : "Featured Projects"}
       </Text>
       <div className="grid grid-cols-3 gap-8">
         {texts.projects.highlights.map((project) => (
@@ -28,7 +28,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
         ))}
       </div>
       <Text as="h2" variant="title2" className="mt-16 mb-4">
-        Outros projetos
+        {lang === "ptBR" ? "Outros projetos" : "Other projects"}
       </Text>
       <div className="grid grid-cols-3 gap-8">
         {texts.projects.others.map((project) => (
