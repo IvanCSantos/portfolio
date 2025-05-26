@@ -15,7 +15,7 @@ export const ptBR = {
   },
   about: {
     textContent: [
-      "Olá, me chamo Ivan, tenho 36 anos.",
+      `Olá, me chamo Ivan, tenho ${calculateAge("1989/02/15")} anos.`,
       "Sou estudante de Ciência da Computação e possuo mais de 12 anos de experiência em TI, incluindo atuação como Analista de TI em empresa multinacional, gerenciando infraestrutura no Brasil, EUA e Colômbia. Tenho sólida base em servidores, redes, automação e cloud.",
       "Atualmente, foco minha transição para o Desenvolvimento Web FullStack, estudando Java Spring Boot e React por meio de cursos práticos (Rocketseat, Origamid, Alura, Algaworks, EBAC) e projetos reais, como um sistema frontend que estou desenvolvendo para a ACATE via UNIVALI.",
     ],
@@ -142,7 +142,7 @@ export const en = {
   },
   about: {
     textContent: [
-      "Hi, my name is Ivan, I’m 36 years old.",
+      `Hi, my name is Ivan, I’m ${calculateAge("1989/02/15")} years old.`,
       "I am a Computer Science student and have more than 12 years of experience in IT, including working as an IT Analyst in a multinational company, managing infrastructure in Brazil, USA and Colombia. I have a solid foundation in servers, networks, automation and cloud.",
       "Currently, I focus on my transition to FullStack Web Development, studying Java Spring Boot and React through practical courses and real projects, such as a frontend system that I am developing for ACATE via UNIVALI.",
     ],
@@ -250,3 +250,24 @@ export const en = {
   },
   curriculum: {},
 };
+
+function calculateAge(dob: string): number {
+  const today = new Date();
+  const birthday = new Date("1989/02/15");
+
+  let age = today.getFullYear() - birthday.getFullYear();
+
+  const currentMonth = today.getMonth();
+  const currentDay = today.getDate();
+  const birthMonth = birthday.getMonth();
+  const birthDay = birthday.getDate();
+
+  if (
+    currentMonth < birthMonth ||
+    (currentMonth === birthMonth && currentDay < birthDay)
+  ) {
+    age--;
+  }
+
+  return age;
+}

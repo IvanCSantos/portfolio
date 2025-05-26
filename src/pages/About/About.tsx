@@ -20,26 +20,35 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
 
   return (
     <div className="mt-4">
-      <section className="flex flex-col mt-24">
+      <section className="flex flex-col mt-16">
         {textContent &&
           textContent.map((paragraph) => (
             <Text
               as="p"
               variant="paragraph"
               className="w-1/2 h-fit p-4 mx-auto text-justify"
+              key={paragraph.replace(" ", "_")}
             >
               {paragraph}
             </Text>
           ))}
       </section>
       <section className="flex flex-col mt-2">
-        <Text as="h3" variant="title3" className="w-1/2 h-fit p-4 mx-auto">
+        <Text
+          as="h3"
+          variant="title3"
+          className="w-1/2 h-fit p-4 mx-auto font-bold"
+        >
           {lang === "ptBR" ? "Graduação" : "Undergraduate Degree"}
         </Text>
         <Text as="p" variant="paragraph" className="w-1/2 h-fit px-4 mx-auto">
           {undergraduateDegree}
         </Text>
-        <Text as="h3" variant="title3" className="w-1/2 h-fit p-4 mx-auto">
+        <Text
+          as="h3"
+          variant="title3"
+          className="w-1/2 h-fit p-4 mx-auto font-bold"
+        >
           {lang === "ptBR" ? "Cursos" : "Courses"}
         </Text>
         {courses &&

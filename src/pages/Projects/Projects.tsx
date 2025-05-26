@@ -12,7 +12,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
   const texts = lang === "ptBR" ? ptBR : en;
 
   return (
-    <div className="mt-24 px-16">
+    <div className="mt-16 px-16">
       <Text as="h2" variant="title2" className="mb-4">
         {lang === "ptBR" ? "Projetos em destaque" : "Featured Projects"}
       </Text>

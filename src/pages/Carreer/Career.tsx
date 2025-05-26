@@ -11,7 +11,7 @@ export const Career: React.FC<CareerProps> = ({ lang }) => {
   const texts = lang === "ptBR" ? ptBR : en;
 
   return (
-    <div className="mt-24 ">
+    <div className="mt-16 ">
       {texts.career.map((job) => {
         return (
           <Experience
