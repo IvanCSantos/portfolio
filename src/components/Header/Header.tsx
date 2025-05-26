@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/logo_preto.svg";
-import { Link } from "react-router";
+import logo from "../../assets/logo_roxo.svg";
+import { NavLink } from "react-router";
 import { Link as Anchor } from "../../components/Link/Link";
 import { ptBR, en } from "../../config/texts.ts";
 import { Button } from "../Button/Button";
@@ -21,40 +21,84 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
       <div className="max-w-[1400px] lg:w-[1400px] flex flex-row h-full mx-auto">
         {/* LOGO */}
         <div className="flex w-[180px] h-full items-center">
-          <Link to="/" className="flex items-center h-full px-4">
-            <img className="w-20" src={logo} alt="Logo" />
-          </Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `flex items-center h-full px-4 ${
+                isActive ? "*:text-purple-1" : "*:text-white"
+              }`
+            }
+          >
+            <img
+              className="w-20 hover:scale-110 transition-all"
+              src={logo}
+              alt="Logo"
+            />
+          </NavLink>
         </div>
 
         {/* MENU */}
         <div className="flex h-full flex-1 items-center justify-center">
           <ul className="flex items-center justify-center gap-8 h-full">
             <li className="h-full">
-              <Link to="/about" className="px-4 align-middle h-full">
-                <Text as="h3" variant="title3">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `px-4 align-middle h-full ${
+                    isActive ? "*:text-hover" : "*:text-purple-1"
+                  }`
+                }
+              >
+                <Text
+                  as="h3"
+                  variant="title3"
+                  className="hover:text-hover hover:scale-110 transition-all"
+                >
                   {lang === "ptBR"
                     ? ptBR.header.about.toUpperCase()
                     : en.header.about.toUpperCase()}
                 </Text>
-              </Link>
+              </NavLink>
             </li>
             <li className="h-full">
-              <Link to="/career" className="px-4 align-middle h-full">
-                <Text as="h3" variant="title3">
+              <NavLink
+                to="/career"
+                className={({ isActive }) =>
+                  `px-4 align-middle h-full ${
+                    isActive ? "*:text-hover" : "*:text-purple-1"
+                  }`
+                }
+              >
+                <Text
+                  as="h3"
+                  variant="title3"
+                  className="hover:text-hover hover:scale-110 transition-all"
+                >
                   {lang === "ptBR"
                     ? ptBR.header.career.toUpperCase()
                     : en.header.career.toUpperCase()}
                 </Text>
-              </Link>
+              </NavLink>
             </li>
             <li className="h-full">
-              <Link to="/projects" className="px-4 align-middle h-full">
-                <Text as="h3" variant="title3">
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  `px-4 align-middle h-full ${
+                    isActive ? "*:text-hover" : "*:text-purple-1"
+                  }`
+                }
+              >
+                <Text
+                  as="h3"
+                  variant="title3"
+                  className="hover:text-hover hover:scale-110 transition-all"
+                >
                   {lang === "ptBR"
                     ? ptBR.header.projects.toUpperCase()
                     : en.header.projects.toUpperCase()}
                 </Text>
-              </Link>
+              </NavLink>
             </li>
             <li className="h-full">
               <Anchor
@@ -64,7 +108,11 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
                 rel="noopener noreferrer"
                 className="px-4 align-middle h-full"
               >
-                <Text as="h3" variant="title3">
+                <Text
+                  as="h3"
+                  variant="title3"
+                  className="text-purple-1 hover:text-hover hover:scale-110 transition-all"
+                >
                   {lang === "ptBR"
                     ? ptBR.header.curriculum.toUpperCase()
                     : en.header.curriculum.toUpperCase()}
@@ -75,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
         </div>
 
         {/* BUTTON */}
-        <div className="flex h-24 w-[180px] items-center justify-end p-8">
+        <div className="flex h-24 w-[180px] items-center justify-end p-8 text-purple-1 hover:text-hover hover:scale-110 transition-all">
           <Button onClick={changeLang}>
             <Globe size={24} />
             <span>{lang === "ptBR" ? "PT" : "EN"}</span>

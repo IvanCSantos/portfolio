@@ -26,7 +26,7 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
             <Text
               as="p"
               variant="paragraph"
-              className="w-1/2 h-fit p-4 mx-auto text-justify"
+              className="w-1/2 h-fit p-4 mx-auto text-justify text-purple-1"
               key={paragraph.replace(" ", "_")}
             >
               {paragraph}
@@ -37,17 +37,21 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
         <Text
           as="h3"
           variant="title3"
-          className="w-1/2 h-fit p-4 mx-auto font-bold"
+          className="w-1/2 h-fit p-4 mx-auto font-bold text-white"
         >
           {lang === "ptBR" ? "Graduação" : "Undergraduate Degree"}
         </Text>
-        <Text as="p" variant="paragraph" className="w-1/2 h-fit px-4 mx-auto">
+        <Text
+          as="p"
+          variant="paragraph"
+          className="w-1/2 h-fit px-4 mx-auto text-purple-1"
+        >
           {undergraduateDegree}
         </Text>
         <Text
           as="h3"
           variant="title3"
-          className="w-1/2 h-fit p-4 mx-auto font-bold"
+          className="w-1/2 h-fit p-4 mx-auto font-bold text-white"
         >
           {lang === "ptBR" ? "Cursos" : "Courses"}
         </Text>
@@ -59,7 +63,7 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
                 as="p"
                 variant="paragraph"
                 key={course.course.replace(" ", "_")}
-                className="w-1/2 h-fit px-4 mx-auto"
+                className="w-1/2 h-fit px-4 mx-auto text-purple-1"
               >
                 {courseString}
               </Text>

@@ -14,9 +14,12 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ lang }) => {
   return (
-    <footer className="flex flex-row gap-4 items-center justify-center h-12">
+    <footer className="flex flex-row gap-4 items-center justify-center h-12 *:hover:text-hover">
       <Link url="mailto:ivancsantos@hotmail.com.br" newTab>
-        <EnvelopeSimple size={32} />
+        <EnvelopeSimple
+          size={32}
+          className="transition-transform hover:scale-110"
+        />
       </Link>
       <Link
         url={
@@ -26,13 +29,22 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
         }
         newTab
       >
-        <LinkedinLogo size={32} />
+        <LinkedinLogo
+          size={32}
+          className="transition-transform hover:scale-110"
+        />
       </Link>
       <Link url="https://github.com/IvanCSantos" newTab>
-        <GithubLogo size={32} />
+        <GithubLogo
+          size={32}
+          className="transition-transform hover:scale-110"
+        />
       </Link>
       <Link url="https://www.instagram.com/ivancsantoss/" newTab>
-        <InstagramLogo size={32} />
+        <InstagramLogo
+          size={32}
+          className="transition-transform hover:scale-110"
+        />
       </Link>
     </footer>
   );

@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-purple-10: #170520;
+  --color-purple-9: #1f072c;
+  --color-purple-8: #230a33;
+  --color-purple-7: #5e1c8b;
+  --color-purple-5: #8225bb;
+  --color-purple-4: #a656dc;
+  --color-purple-2: #e4ccf5;
+  --color-purple-1: #e6d1f6;
+  --color-hover: #fff;
+  /* --color-muted: ; */
+
+  /* Fonts */
+  --font-primary: "Inter", sans-serif; /* Títulos e navegação */
+  --font-secondary: "Roboto", sans-serif; /* Corpo de texto */
+}
