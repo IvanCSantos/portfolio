@@ -10,8 +10,7 @@ export const ptBR = {
     siteTitle: "Ivan Carlos Santos",
     professionalTitle: "Desenvolvedor web full stack",
     textContent: [
-      "Sou estudante de Ciência da Computação e possuo mais de 12 anos deexperiência em TI, incluindo atuação como Analista de TI em empresamultinacional, gerenciando infraestrutura no Brasil, EUA e Colômbia.Tenho sólida base em servidores, redes, automação e cloud.",
-      "Atualmente, foco minha transição para o Desenvolvimento Web FullStack, estudando Java Spring Boot e React por meio de cursos práticos(Rocketseat, Origamid, Alura, Algaworks, EBAC) e projetos reais, comoum sistema frontend que estou desenvolvendo para a ACATE via UNIVALI.",
+      "Desenvolvo aplicações web acessíveis, escaláveis e com estrutura robusta.",
     ],
   },
   about: {
@@ -121,8 +120,7 @@ export const en = {
     siteTitle: "Ivan Carlos Santos",
     professionalTitle: "Full Stack web developer",
     textContent: [
-      "I am a Computer Science student and have more than 12 years of experience in IT, including working as an IT Analyst in a multinational company, managing infrastructure in Brazil, USA and Colombia. I have a solid foundation in servers, networks, automation and cloud.",
-      "Currently, I focus on my transition to FullStack Web Development, studying Java Spring Boot and React through practical courses and real projects, such as a frontend system that I am developing for ACATE via UNIVALI.",
+      "I develop accessible, scalable web applications with a robust structure.",
     ],
   },
   about: {

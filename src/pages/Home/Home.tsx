@@ -14,12 +14,12 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
   return (
     <div className="mt-24">
       <section className="flex flex-col mt-36">
-        <Text as="h1" variant="title1" className="text-5xl font-bold mx-auto">
+        <Text as="h1" variant="title1" className="text-7xl font-bold mx-auto">
           {lang === "ptBR"
             ? ptBR.home.siteTitle.toUpperCase()
             : en.home.siteTitle.toUpperCase()}
         </Text>
-        <Text as="h2" variant="title2" className="font-bold mx-auto">
+        <Text as="h2" variant="title2" className="font-bold mx-auto text-4xl">
           {lang === "ptBR"
             ? ptBR.home.professionalTitle
             : en.home.professionalTitle}
@@ -31,7 +31,7 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
             <Text
               as="p"
               variant="paragraph"
-              className="w-1/2 h-fit p-4 mx-auto text-justify"
+              className="w-1/2 h-fit p-4 mx-auto text-center text-xl"
             >
               {paragraph}
             </Text>
