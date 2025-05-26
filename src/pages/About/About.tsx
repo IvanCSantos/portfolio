@@ -8,23 +8,22 @@ interface AboutProps {
 }
 
 export const About: React.FC<AboutProps> = ({ lang }) => {
+  const textContent =
+    lang === "ptBR" ? ptBR.about.textContent : en.about.textContent;
+
   return (
     <div className="mt-4">
       <section className="flex flex-col mt-36">
-        <Text
-          as="p"
-          variant="paragraph"
-          className="w-1/2 h-fit p-4 mx-auto text-justify"
-        >
-          {lang === "ptBR" ? ptBR.about.pagragraph1 : en.about.pagragraph1}
-        </Text>
-        <Text
-          as="p"
-          variant="paragraph"
-          className="w-1/2 h-fit p-4 mx-auto text-justify"
-        >
-          {lang === "ptBR" ? ptBR.about.paragraph2 : en.about.paragraph2}
-        </Text>
+        {textContent &&
+          textContent.map((paragraph) => (
+            <Text
+              as="p"
+              variant="paragraph"
+              className="w-1/2 h-fit p-4 mx-auto text-justify"
+            >
+              {paragraph}
+            </Text>
+          ))}
       </section>
     </div>
   );

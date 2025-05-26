@@ -8,6 +8,9 @@ interface HomeProps {
 }
 
 export const Home: React.FC<HomeProps> = ({ lang }) => {
+  const textContent =
+    lang === "ptBR" ? ptBR.home.textContent : en.home.textContent;
+
   return (
     <div className="mt-24">
       <section className="flex flex-col mt-36">
@@ -23,20 +26,16 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
         </Text>
       </section>
       <section className="flex flex-col mt-36">
-        <Text
-          as="p"
-          variant="paragraph"
-          className="w-1/2 h-fit p-4 mx-auto text-justify"
-        >
-          {lang === "ptBR" ? ptBR.home.descriptionP1 : en.home.descriptionP1}
-        </Text>
-        <Text
-          as="p"
-          variant="paragraph"
-          className="w-1/2 h-fit p-4 mx-auto text-justify"
-        >
-          {lang === "ptBR" ? ptBR.home.descriptionP2 : en.home.descriptionP2}
-        </Text>
+        {textContent &&
+          textContent.map((paragraph) => (
+            <Text
+              as="p"
+              variant="paragraph"
+              className="w-1/2 h-fit p-4 mx-auto text-justify"
+            >
+              {paragraph}
+            </Text>
+          ))}
       </section>
     </div>
   );
