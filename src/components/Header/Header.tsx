@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
 
         {/* MENU */}
         <div className="flex h-full flex-1 items-center justify-center">
-          <ul className="flex items-center justify-center gap-4 h-full">
+          <ul className="flex items-center justify-center gap-8 h-full">
             <li className="h-full">
               <Link to="/about" className="px-4 align-middle h-full">
                 <Text as="h3" variant="title3">
@@ -57,13 +57,6 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
               </Link>
             </li>
             <li className="h-full">
-              {/* <Link to="/curriculum" className="px-4 align-middle h-full">
-                <Text as="h3" variant="title3">
-                  {lang === "ptBR"
-                    ? ptBR.header.curriculum.toUpperCase()
-                    : en.header.curriculum.toUpperCase()}
-                </Text>
-              </Link> */}
               <Anchor
                 url={cvUrl}
                 download
