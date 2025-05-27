@@ -155,7 +155,17 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 bg-background z-50 flex flex-col">
           <div className="flex justify-between items-center p-4 border-b border-purple-8">
-            <img className="w-20" src={logo} alt="Logo" />
+            <NavLink
+              to="/"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                `flex items-center px-4 ${
+                  isActive ? "*:text-hover" : "*:text-secondary"
+                }`
+              }
+            >
+              <img className="w-20" src={logo} alt="Logo" />
+            </NavLink>
             <button
               onClick={closeMenu}
               className="p-2 text-purple-1 hover:text-hover transition-colors"
