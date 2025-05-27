@@ -30,7 +30,7 @@ export const Text = ({
     | "siteTitle"
     | "listItem"
     | "link";
-  children: string;
+  children: string | React.ReactNode;
   className?: string;
 }) => {
   return React.createElement(

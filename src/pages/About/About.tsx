@@ -7,8 +7,10 @@ interface AboutProps {
   lang: Language;
 }
 
+type TextBlock = string | { highlight: string };
+
 export const About: React.FC<AboutProps> = ({ lang }) => {
-  const textContent =
+  const textContent: TextBlock[][] =
     lang === "ptBR" ? ptBR.about.textContent : en.about.textContent;
 
   const undergraduateDegree =
@@ -21,17 +23,24 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
   return (
     <div className="mt-4">
       <section className="flex flex-col mt-16">
-        {textContent &&
-          textContent.map((paragraph) => (
-            <Text
-              as="p"
-              variant="paragraph"
-              className="w-1/2 h-fit p-4 mx-auto text-justify text-purple-1"
-              key={paragraph.replace(" ", "_")}
-            >
-              {paragraph}
-            </Text>
-          ))}
+        {textContent.map((paragraph, i) => (
+          <Text
+            as="p"
+            variant="paragraph"
+            key={i}
+            className="w-1/2 h-fit p-4 mx-auto text-justify text-purple-1"
+          >
+            {paragraph.map((chunk, index) =>
+              typeof chunk === "string" ? (
+                chunk
+              ) : (
+                <span key={index} className="font-bold text-white">
+                  {chunk.highlight}
+                </span>
+              )
+            )}
+          </Text>
+        ))}
       </section>
       <section className="flex flex-col mt-2">
         <Text
