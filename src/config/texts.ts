@@ -287,7 +287,7 @@ export const en = {
   curriculum: {},
 };
 
-function calculateAge(dob: string): number {
+function calculateAge(): number {
   const today = new Date();
   const birthday = new Date("1989/02/15");
 
