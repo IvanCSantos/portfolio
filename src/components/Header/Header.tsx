@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
   return (
     <>
       <header className="flex flex-row px-4 md:px-8 xl:max-w-[1400px] mx-auto h-24 w-full">
-        <div className="flex items-center">
+        <div className="hidden md:flex items-center">
           <NavLink
             to="/"
             onClick={closeMenu}

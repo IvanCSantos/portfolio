@@ -24,7 +24,7 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
         </Text>
         <Text
           as="h2"
-          className="text-center text-3xl md:text-5xl xl:text-6xl font-bold py-2 mx-auto --font-primary text-secondary"
+          className="text-center text-2xl md:text-4xl xl:text-5xl font-bold py-2 mx-auto --font-primary text-secondary"
         >
           {lang === "ptBR"
             ? ptBR.home.professionalTitle
@@ -36,7 +36,7 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
           textContent.map((paragraph) => (
             <Text
               as="p"
-              className="text-center text-lg md:text-xl xl:w-1/2 h-fit p-4 mx-auto --font-secondary text-secondary"
+              className="text-center text-md md:text-lg xl:text-xl h-fit p-4 mx-auto --font-secondary text-secondary"
             >
               {paragraph}
             </Text>
