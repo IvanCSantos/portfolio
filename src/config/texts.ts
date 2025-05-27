@@ -107,7 +107,7 @@ export const ptBR = {
       {
         name: "Game API",
         description:
-          "Um projeto desenvolvido para estudo de com Java Spring Boot durante o Intensivão Dev Superior",
+          "Um projeto desenvolvido para estudo de Java Spring Boot durante o Intensivão Dev Superior",
         tags: ["Java", "Java Spring Boot", "Docker"],
         github: "https://github.com/IvanCSantos/game-api",
         liveUrl: "",
