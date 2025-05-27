@@ -15,7 +15,7 @@ export const Experience: React.FC<ExperienceProps> = ({
   experience,
 }) => {
   return (
-    <div className="mt-16">
+    <div className="">
       <article className="px-4 flex flex-col justify-start md:grid md:grid-cols-[1fr_3fr] xl:grid-cols-[1fr_2fr] md:justify-center md:gap-8">
         <div className="text-start md:text-right">
           <Text as="span" className="font-extralight text-muted text-lg">
