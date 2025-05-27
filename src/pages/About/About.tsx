@@ -56,7 +56,7 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
         </Text>
         <Text
           as="h3"
-          className="mt-4 px-4 md:w-2/3 xl:w-1/2 h-fit md:mx-auto font-bold text-primary"
+          className="mt-4 px-4 md:w-2/3 xl:w-1/2 h-fit p-4 md:mx-auto font-bold text-primary"
         >
           {lang === "ptBR" ? "Cursos" : "Courses"}
         </Text>
