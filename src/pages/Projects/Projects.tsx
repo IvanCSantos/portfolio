@@ -16,7 +16,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
       <Text as="h2" className="mb-4 text-primary">
         {lang === "ptBR" ? "Projetos em destaque" : "Featured Projects"}
       </Text>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-8">
+      <div className="grid grid-cols-1 w-2/3 mx-auto gap-4 md:w-full md:grid-cols-2 xl:grid-cols-3 xl:gap-8">
         {texts.projects.highlights.map((project) => (
           <Card
             title={project.name}
@@ -30,7 +30,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
       <Text as="h2" className="mt-16 mb-4 text-primary">
         {lang === "ptBR" ? "Outros projetos" : "Other projects"}
       </Text>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-8">
+      <div className="grid grid-cols-1 w-2/3 mx-auto gap-4 md:w-full md:grid-cols-2 xl:grid-cols-3 xl:gap-8">
         {texts.projects.others.map((project) => (
           <Card
             title={project.name}
