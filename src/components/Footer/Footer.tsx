@@ -14,7 +14,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ lang }) => {
   return (
-    <footer className="flex flex-row gap-4 items-center justify-center h-12 *:hover:text-hover">
+    <footer className="pt-8 md:pt-0 flex flex-row gap-4 items-center justify-center h-12 *:hover:text-hover">
       <Link url="mailto:ivancsantos@hotmail.com.br" newTab>
         <EnvelopeSimple
           size={32}
