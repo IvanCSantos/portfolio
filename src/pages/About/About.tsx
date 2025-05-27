@@ -21,14 +21,13 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
   const courses = lang === "ptBR" ? ptBR.about.courses : en.about.courses;
 
   return (
-    <div className="mt-4">
-      <section className="flex flex-col mt-16">
+    <div className="mt-4 md:mt-12">
+      <section className="flex flex-col">
         {textContent.map((paragraph, i) => (
           <Text
             as="p"
-            variant="paragraph"
             key={i}
-            className="w-1/2 h-fit p-4 mx-auto text-justify text-secondary"
+            className="px-4 md:w-2/3 xl:w-1/2 h-fit p-4 mx-auto text-justify text-secondary"
           >
             {paragraph.map((chunk, index) =>
               typeof chunk === "string" ? (
@@ -45,22 +44,19 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
       <section className="flex flex-col mt-2">
         <Text
           as="h3"
-          variant="title3"
-          className="w-1/2 h-fit p-4 mx-auto font-bold text-primary"
+          className="px-4 md:w-2/3 xl:w-1/2 h-fit p-4 md:mx-auto font-bold text-primary"
         >
           {lang === "ptBR" ? "Graduação" : "Undergraduate Degree"}
         </Text>
         <Text
           as="p"
-          variant="paragraph"
-          className="w-1/2 h-fit px-4 mx-auto text-secondary"
+          className="px-4 md:w-2/3 xl:w-1/2 h-fit md:mx-auto text-secondary"
         >
           {undergraduateDegree}
         </Text>
         <Text
           as="h3"
-          variant="title3"
-          className="w-1/2 h-fit p-4 mx-auto font-bold text-primary"
+          className="mt-4 px-4 md:w-2/3 xl:w-1/2 h-fit md:mx-auto font-bold text-primary"
         >
           {lang === "ptBR" ? "Cursos" : "Courses"}
         </Text>
@@ -70,9 +66,8 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
             return (
               <Text
                 as="p"
-                variant="paragraph"
                 key={course.course.replace(" ", "_")}
-                className="w-1/2 h-fit px-4 mx-auto text-secondary"
+                className="px-4 md:w-2/3 xl:w-1/2 h-fit md:mx-auto text-secondary"
               >
                 {courseString}
               </Text>

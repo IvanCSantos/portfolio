@@ -12,11 +12,11 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
   const texts = lang === "ptBR" ? ptBR : en;
 
   return (
-    <div className="mt-16 px-16">
-      <Text as="h2" variant="title2" className="mb-4 text-primary">
+    <div className="mt-8 md:mt-12 xl:mt-24 px-16">
+      <Text as="h2" className="mb-4 text-primary">
         {lang === "ptBR" ? "Projetos em destaque" : "Featured Projects"}
       </Text>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-8">
         {texts.projects.highlights.map((project) => (
           <Card
             title={project.name}
@@ -27,10 +27,10 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
           />
         ))}
       </div>
-      <Text as="h2" variant="title2" className="mt-16 mb-4 text-primary">
+      <Text as="h2" className="mt-16 mb-4 text-primary">
         {lang === "ptBR" ? "Outros projetos" : "Other projects"}
       </Text>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-8">
         {texts.projects.others.map((project) => (
           <Card
             title={project.name}

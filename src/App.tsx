@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-secondary">
       <Header lang={lang} changeLang={handleChangeLang} />
-      <main className="flex-grow max-w-[1400px] lg:w-[1400px] mx-auto">
+      <main className="flex-grow px-4 md:px-8 xl:max-w-[1400px] mx-auto">
         <Routes>
           <Route path="/" element={<Home lang={lang} />} />
           <Route path="/about" element={<About lang={lang} />} />

@@ -12,12 +12,11 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
     lang === "ptBR" ? ptBR.home.textContent : en.home.textContent;
 
   return (
-    <div className="mt-24">
-      <section className="flex flex-col mt-36">
+    <div className="mt-12 md:mt-24 xl:mt-36">
+      <section className="flex flex-col">
         <Text
           as="h1"
-          variant="title1"
-          className="text-7xl font-bold mx-auto --font-primary text-white"
+          className="text-center text-4xl md:text-6xl xl:text-7xl font-bold mx-auto --font-primary text-white"
         >
           {lang === "ptBR"
             ? ptBR.home.siteTitle.toUpperCase()
@@ -25,21 +24,19 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
         </Text>
         <Text
           as="h2"
-          variant="title2"
-          className="font-bold py-2 mx-auto text-4xl --font-primary text-secondary"
+          className="text-center text-3xl md:text-5xl xl:text-6xl font-bold py-2 mx-auto --font-primary text-secondary"
         >
           {lang === "ptBR"
             ? ptBR.home.professionalTitle
             : en.home.professionalTitle}
         </Text>
       </section>
-      <section className="flex flex-col mt-36">
+      <section className="flex flex-col mt-24">
         {textContent &&
           textContent.map((paragraph) => (
             <Text
               as="p"
-              variant="paragraph"
-              className="w-1/2 h-fit p-4 mx-auto text-center text-xl --font-secondary text-secondary"
+              className="text-center text-lg md:text-xl xl:w-1/2 h-fit p-4 mx-auto --font-secondary text-secondary"
             >
               {paragraph}
             </Text>

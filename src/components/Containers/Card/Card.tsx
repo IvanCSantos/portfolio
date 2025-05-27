@@ -27,28 +27,35 @@ export const Card = ({
             <Text
               as="h3"
               variant="link"
-              className="text-xl text-primary hover:text-hover"
+              className="text-md md:text-xl text-primary hover:text-hover"
             >
               {title}
             </Text>
           </Link>
         ) : (
-          <Text as="h3" variant="title3" className="text-primary">
+          <Text
+            as="h3"
+            className="text-md md:text-xl text-primary hover:text-hover"
+          >
             {title}
           </Text>
         )}
 
-        <Text as="span" variant="paragraph" className="text-secondary">
+        <Text as="span" className="text-sm md:text-md text-secondary">
           {description}
         </Text>
       </div>
       <div className="flex flex-col gap-2">
         {liveUrl ? (
           <Link url={liveUrl}>
-            <Text className="text-secondary">{liveString}</Text>
+            <Text className="text-sm md:text-md text-secondary">
+              {liveString}
+            </Text>
           </Link>
         ) : (
-          <Text className="text-secondary">{liveString}</Text>
+          <Text className="text-sm md:text-md text-secondary">
+            {liveString}
+          </Text>
         )}
 
         <div className="flex flex-row flex-wrap justify-start gap-x-2 gap-y-1">

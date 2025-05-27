@@ -16,22 +16,14 @@ export const Experience: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <div className="mt-16">
-      <article className="grid grid-cols-[1fr_2fr] justify-center gap-8">
-        <div className="text-right">
-          <Text
-            as="span"
-            variant="muted"
-            className="font-extralight text-muted"
-          >
+      <article className="px-4 flex flex-col justify-start md:grid md:grid-cols-[1fr_3fr] xl:grid-cols-[1fr_2fr] md:justify-center md:gap-8">
+        <div className="text-start md:text-right">
+          <Text as="span" className="font-extralight text-muted text-lg">
             {date}
           </Text>
         </div>
-        <div className="flex flex-col gap-4">
-          <Text
-            as="h2"
-            variant="title2"
-            className="font-extrabold text-primary text-2xl"
-          >
+        <div className="flex flex-col gap-4 md:px-0">
+          <Text as="h2" className="font-extrabold text-primary text-2xl">
             {`${title} @ ${company}`}
           </Text>
           <ul>
