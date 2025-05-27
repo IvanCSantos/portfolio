@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-purple-10 text-purple-1">
+    <div className="flex flex-col min-h-screen bg-background text-secondary">
       <Header lang={lang} changeLang={handleChangeLang} />
       <main className="flex-grow max-w-[1400px] lg:w-[1400px] mx-auto">
         <Routes>

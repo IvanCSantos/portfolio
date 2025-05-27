@@ -1,17 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
+  /* Purple */
   --color-purple-10: #170520;
-  --color-purple-9: #1f072c;
   --color-purple-8: #230a33;
-  --color-purple-7: #5e1c8b;
-  --color-purple-5: #8225bb;
-  --color-purple-4: #a656dc;
-  --color-purple-2: #e4ccf5;
-  --color-purple-1: #e6d1f6;
-  --color-hover: #fff;
-  /* --color-muted: ; */
+  --color-purple-5: #5f1c8b; /* Nuxstep */
+  --color-purple-2: #e6d1f6;
+  --color-purple-1: #f6eefc;
+
+  --color-lavanda: #e0dde4;
+  --color-yellow: #f6d776;
+  --color-green: #a4ff4f;
+
+  /* Colors */
+  --color-primary: var(--color-yellow);
+  --color-secondary: var(--color-lavanda);
+  --color-highlight: var(--color-green);
+  --color-muted: #a490aa;
+  --color-hover: #e6d1f6;
+  --color-div-hover: #2d0f3d;
+  --color-background: var(--color-purple-10);
 
   /* Fonts */
   --font-primary: "Inter", sans-serif; /* Títulos e navegação */

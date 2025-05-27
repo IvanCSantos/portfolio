@@ -25,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
             to="/"
             className={({ isActive }) =>
               `flex items-center h-full px-4 ${
-                isActive ? "*:text-purple-1" : "*:text-white"
+                isActive ? "*:text-hover" : "*:text-secondary"
               }`
             }
           >
@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
                 to="/about"
                 className={({ isActive }) =>
                   `px-4 align-middle h-full ${
-                    isActive ? "*:text-hover" : "*:text-purple-1"
+                    isActive ? "*:text-hover" : "*:text-secondary"
                   }`
                 }
               >
@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
                 to="/career"
                 className={({ isActive }) =>
                   `px-4 align-middle h-full ${
-                    isActive ? "*:text-hover" : "*:text-purple-1"
+                    isActive ? "*:text-hover" : "*:text-secondary"
                   }`
                 }
               >
@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, changeLang }) => {
                 to="/projects"
                 className={({ isActive }) =>
                   `px-4 align-middle h-full ${
-                    isActive ? "*:text-hover" : "*:text-purple-1"
+                    isActive ? "*:text-hover" : "*:text-secondary"
                   }`
                 }
               >

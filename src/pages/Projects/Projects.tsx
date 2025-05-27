@@ -13,7 +13,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
 
   return (
     <div className="mt-16 px-16">
-      <Text as="h2" variant="title2" className="mb-4 text-purple-1">
+      <Text as="h2" variant="title2" className="mb-4 text-primary">
         {lang === "ptBR" ? "Projetos em destaque" : "Featured Projects"}
       </Text>
       <div className="grid grid-cols-3 gap-8">
@@ -27,7 +27,7 @@ export const Projects: React.FC<ProjectProps> = ({ lang }) => {
           />
         ))}
       </div>
-      <Text as="h2" variant="title2" className="mt-16 mb-4 text-purple-1">
+      <Text as="h2" variant="title2" className="mt-16 mb-4 text-primary">
         {lang === "ptBR" ? "Outros projetos" : "Other projects"}
       </Text>
       <div className="grid grid-cols-3 gap-8">

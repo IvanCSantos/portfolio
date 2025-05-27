@@ -20,35 +20,35 @@ export const Card = ({
   const liveString = liveUrl ? `Live: ${liveUrl}` : "";
 
   return (
-    <div className="flex flex-col justify-between border rounded-lg p-4 min-h-48 hover:bg-purple-9 transition-colors">
+    <div className="flex flex-col justify-between border rounded-lg p-4 min-h-48 hover:bg-div-hover transition-colors">
       <div className="pb-8">
         {github ? (
           <Link url={github}>
             <Text
               as="h3"
               variant="link"
-              className="text-xl text-purple-1 hover:text-hover"
+              className="text-xl text-primary hover:text-hover"
             >
               {title}
             </Text>
           </Link>
         ) : (
-          <Text as="h3" variant="title3" className="text-purple-1">
+          <Text as="h3" variant="title3" className="text-primary">
             {title}
           </Text>
         )}
 
-        <Text as="span" variant="paragraph" className="text-purple-1">
+        <Text as="span" variant="paragraph" className="text-secondary">
           {description}
         </Text>
       </div>
       <div className="flex flex-col gap-2">
         {liveUrl ? (
           <Link url={liveUrl}>
-            <Text className="text-purple-1">{liveString}</Text>
+            <Text className="text-secondary">{liveString}</Text>
           </Link>
         ) : (
-          <Text className="text-purple-1">{liveString}</Text>
+          <Text className="text-secondary">{liveString}</Text>
         )}
 
         <div className="flex flex-row flex-wrap justify-start gap-x-2 gap-y-1">

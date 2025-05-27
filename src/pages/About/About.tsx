@@ -28,13 +28,13 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
             as="p"
             variant="paragraph"
             key={i}
-            className="w-1/2 h-fit p-4 mx-auto text-justify text-purple-1"
+            className="w-1/2 h-fit p-4 mx-auto text-justify text-secondary"
           >
             {paragraph.map((chunk, index) =>
               typeof chunk === "string" ? (
                 chunk
               ) : (
-                <span key={index} className="font-bold text-white">
+                <span key={index} className="font-bold text-highlight">
                   {chunk.highlight}
                 </span>
               )
@@ -46,21 +46,21 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
         <Text
           as="h3"
           variant="title3"
-          className="w-1/2 h-fit p-4 mx-auto font-bold text-white"
+          className="w-1/2 h-fit p-4 mx-auto font-bold text-primary"
         >
           {lang === "ptBR" ? "Graduação" : "Undergraduate Degree"}
         </Text>
         <Text
           as="p"
           variant="paragraph"
-          className="w-1/2 h-fit px-4 mx-auto text-purple-1"
+          className="w-1/2 h-fit px-4 mx-auto text-secondary"
         >
           {undergraduateDegree}
         </Text>
         <Text
           as="h3"
           variant="title3"
-          className="w-1/2 h-fit p-4 mx-auto font-bold text-white"
+          className="w-1/2 h-fit p-4 mx-auto font-bold text-primary"
         >
           {lang === "ptBR" ? "Cursos" : "Courses"}
         </Text>
@@ -72,7 +72,7 @@ export const About: React.FC<AboutProps> = ({ lang }) => {
                 as="p"
                 variant="paragraph"
                 key={course.course.replace(" ", "_")}
-                className="w-1/2 h-fit px-4 mx-auto text-purple-1"
+                className="w-1/2 h-fit px-4 mx-auto text-secondary"
               >
                 {courseString}
               </Text>

@@ -7,7 +7,7 @@ export const ptBR = {
     language: "Português",
   },
   home: {
-    siteTitle: "Ivan Carlos Santos",
+    siteTitle: "Ivan Carlos DOS Santos",
     professionalTitle: "Desenvolvedor web full stack",
     textContent: [
       "Desenvolvo aplicações web acessíveis, escaláveis e com estrutura robusta.",
@@ -152,7 +152,7 @@ export const en = {
     language: "Inglês",
   },
   home: {
-    siteTitle: "Ivan Carlos Santos",
+    siteTitle: "Ivan Carlos DOS Santos",
     professionalTitle: "Full Stack web developer",
     textContent: [
       "I develop accessible, scalable web applications with a robust structure.",

@@ -26,7 +26,7 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
         <Text
           as="h2"
           variant="title2"
-          className="font-bold py-2 mx-auto text-4xl --font-primary text-purple-1"
+          className="font-bold py-2 mx-auto text-4xl --font-primary text-secondary"
         >
           {lang === "ptBR"
             ? ptBR.home.professionalTitle
@@ -39,7 +39,7 @@ export const Home: React.FC<HomeProps> = ({ lang }) => {
             <Text
               as="p"
               variant="paragraph"
-              className="w-1/2 h-fit p-4 mx-auto text-center text-xl --font-secondary text-purple-1"
+              className="w-1/2 h-fit p-4 mx-auto text-center text-xl --font-secondary text-secondary"
             >
               {paragraph}
             </Text>

@@ -21,7 +21,7 @@ export const Experience: React.FC<ExperienceProps> = ({
           <Text
             as="span"
             variant="muted"
-            className="font-extralight text-purple-1"
+            className="font-extralight text-muted"
           >
             {date}
           </Text>
@@ -30,7 +30,7 @@ export const Experience: React.FC<ExperienceProps> = ({
           <Text
             as="h2"
             variant="title2"
-            className="font-extrabold text-purple-1"
+            className="font-extrabold text-primary text-2xl"
           >
             {`${title} @ ${company}`}
           </Text>
@@ -41,7 +41,7 @@ export const Experience: React.FC<ExperienceProps> = ({
                   key={xp}
                   as="li"
                   variant="listItem"
-                  className="text-purple-1"
+                  className="text-secondary"
                 >
                   {xp}
                 </Text>

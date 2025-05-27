@@ -6,6 +6,6 @@ interface CardProps {
 
 export const Tag: React.FC<CardProps> = ({ text }) => {
   return (
-    <div className="border rounded-md  w-auto p-1 text-purple-1">{text}</div>
+    <div className="border rounded-md  w-auto p-1 text-secondary">{text}</div>
   );
 };
