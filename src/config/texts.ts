@@ -34,7 +34,7 @@ export const ptBR = {
         { highlight: " Java Spring Boot " },
         "e",
         { highlight: " React " },
-        "por meio de cursos práticos (Rocketseat, Origamid, Alura, Algaworks, EBAC) e projetos reais, como um sistema frontend que estou desenvolvendo para a ACATE via UNIVALI.",
+        "por meio de cursos práticos (Rocketseat, Origamid, Alura, Algaworks, EBAC) e projetos reais, como um sistema frontend que estou desenvolvendo para a ACAFE via UNIVALI.",
       ],
     ],
     undergratuateDegree: {
@@ -179,7 +179,7 @@ export const en = {
         { highlight: " Java Spring Boot " },
         "and",
         { highlight: " React " },
-        "through practical courses and real projects, such as a frontend system that I am developing for ACATE via UNIVALI.",
+        "through practical courses and real projects, such as a frontend system that I am developing for ACAFE via UNIVALI.",
       ],
     ],
     undergratuateDegree: {
