@@ -97,13 +97,37 @@ export const ptBR = {
         liveUrl: "https://ivansantos.dev/",
       },
       {
-        name: "A.N.I.T.A.",
+        name: "API Plano de Ação",
         description:
-          "Gerenciamento de cursos de graduação e pós graduação das universidades do sistema Acafe - desenvolvido via UNIVALI",
-        tags: ["React", "HTML", "CSS", "Javascript"],
-        github: "",
-        liveUrl: "https://anita.labsc.dev.br",
+          "Um projeto desenvolvido para participação em um processo seletivo de uma vaga Full Stack - Java",
+        tags: [
+          "Java",
+          "Java Spring Boot",
+          "JPA",
+          "Lombok",
+          "API Rest",
+          "Docker",
+        ],
+        github: "https://github.com/IvanCSantos/omd-planoacao-backend",
+        liveUrl: "",
       },
+      {
+        name: "Frontend Plano de Ação",
+        description:
+          "Um projeto desenvolvido para participação em um processo seletivo de uma vaga Full Stack - React",
+        tags: [
+          "React",
+          "Typescript",
+          "Tailwind CSS",
+          "Integração API",
+          "Vite",
+          "Docker",
+        ],
+        github: "https://github.com/IvanCSantos/omd-planoacao-frontend",
+        liveUrl: "https://planoacao.portfolio.ivansantos.dev/",
+      },
+    ],
+    others: [
       {
         name: "Game API",
         description:
@@ -112,15 +136,13 @@ export const ptBR = {
         github: "https://github.com/IvanCSantos/game-api",
         liveUrl: "",
       },
-    ],
-    others: [
       {
-        name: "Bind DNS Blacklist",
+        name: "A.N.I.T.A.",
         description:
-          "Script para gerenciar bloqueios de domínios no sistema de DNS Bind",
-        tags: ["Python", "Shell Script", "API", "Automação"],
-        github: "https://github.com/IvanCSantos/add-domains-to-bind-blacklist",
-        liveUrl: "",
+          "Sistema de gerenciamento de matriz curricular em cursos de graduação e pós-graduação em universidades do sistema Acafe - desenvolvido via UNIVALI",
+        tags: ["React", "HTML", "CSS", "Javascript"],
+        github: "",
+        liveUrl: "https://anita.labsc.dev.br",
       },
       {
         name: "Clone Tabnews",
@@ -136,6 +158,14 @@ export const ptBR = {
           "Uma rede social para cachorros desenvolvida durante o curso React completo da Origamid",
         tags: ["React", "HTML", "CSS", "Javascript"],
         github: "https://github.com/IvanCSantos/origamid-react-projeto-final",
+        liveUrl: "",
+      },
+      {
+        name: "Bind DNS Blacklist",
+        description:
+          "Script para gerenciar bloqueios de domínios no sistema de DNS Bind",
+        tags: ["Python", "Shell Script", "API", "Automação"],
+        github: "https://github.com/IvanCSantos/add-domains-to-bind-blacklist",
         liveUrl: "",
       },
     ],
@@ -242,13 +272,37 @@ export const en = {
         liveUrl: "https://ivansantos.dev/",
       },
       {
-        name: "A.N.I.T.A.",
+        name: "Action Plan API",
         description:
-          "Management of undergraduate and postgraduate courses at universities in the Acafe system - developed via UNIVALI",
-        tags: ["React", "HTML", "CSS", "Javascript"],
-        github: "",
-        liveUrl: "https://anita.labsc.dev.br",
+          "A project developed for participation in a selection process for a Full Stack position - Java.",
+        tags: [
+          "Java",
+          "Java Spring Boot",
+          "JPA",
+          "Lombok",
+          "API Rest",
+          "Docker",
+        ],
+        github: "https://github.com/IvanCSantos/omd-planoacao-backend",
+        liveUrl: "",
       },
+      {
+        name: "Action Plan Frontend",
+        description:
+          "A project developed for participation in a selection process for a Full Stack position - React.",
+        tags: [
+          "React",
+          "Typescript",
+          "Tailwind CSS",
+          "Integração API",
+          "Vite",
+          "Docker",
+        ],
+        github: "https://github.com/IvanCSantos/omd-planoacao-frontend",
+        liveUrl: "https://planoacao.portfolio.ivansantos.dev/",
+      },
+    ],
+    others: [
       {
         name: "Game API",
         description:
@@ -257,14 +311,13 @@ export const en = {
         github: "https://github.com/IvanCSantos/game-api",
         liveUrl: "",
       },
-    ],
-    others: [
       {
-        name: "Bind DNS Blacklist",
-        description: "Script to manage domain blocks in Bind DNS system",
-        tags: ["Python", "Shell Script", "API", "Automation"],
-        github: "https://github.com/IvanCSantos/add-domains-to-bind-blacklist",
-        liveUrl: "",
+        name: "A.N.I.T.A.",
+        description:
+          "Management of undergraduate and postgraduate courses at universities in the Acafe system - developed via UNIVALI",
+        tags: ["React", "HTML", "CSS", "Javascript"],
+        github: "",
+        liveUrl: "https://anita.labsc.dev.br",
       },
       {
         name: "Clone Tabnews",
@@ -280,6 +333,13 @@ export const en = {
           "A social network for dogs developed during Origamid's complete React course",
         tags: ["React", "HTML", "CSS", "Javascript"],
         github: "https://github.com/IvanCSantos/origamid-react-projeto-final",
+        liveUrl: "",
+      },
+      {
+        name: "Bind DNS Blacklist",
+        description: "Script to manage domain blocks in Bind DNS system",
+        tags: ["Python", "Shell Script", "API", "Automation"],
+        github: "https://github.com/IvanCSantos/add-domains-to-bind-blacklist",
         liveUrl: "",
       },
     ],
