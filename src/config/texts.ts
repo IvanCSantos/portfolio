@@ -105,6 +105,14 @@ export const ptBR = {
         liveUrl: "",
       },
       {
+        name: "A.N.I.T.A.",
+        description:
+          "Sistema de gerenciamento de matriz curricular em cursos de graduação e pós-graduação em universidades do sistema Acafe - desenvolvido via UNIVALI",
+        tags: ["React", "HTML", "CSS", "Javascript"],
+        github: "",
+        liveUrl: "https://anita.labsc.dev.br",
+      },
+      {
         name: "API Plano de Ação",
         description:
           "Um projeto desenvolvido para participação em um processo seletivo de uma vaga Full Stack - Java",
@@ -137,18 +145,10 @@ export const ptBR = {
     ],
     others: [
       {
-        name: "A.N.I.T.A.",
-        description:
-          "Sistema de gerenciamento de matriz curricular em cursos de graduação e pós-graduação em universidades do sistema Acafe - desenvolvido via UNIVALI",
-        tags: ["React", "HTML", "CSS", "Javascript"],
-        github: "",
-        liveUrl: "https://anita.labsc.dev.br",
-      },
-      {
         name: "Tecboard",
         description:
           "Portal de publicação de eventos de tecnologia, desenvolvido durante o curso de React da Alura",
-        tags: ["React", "HTML", "CSS", "Typescript"],
+        tags: ["React", "HTML", "CSS", "Typescript", "Docker"],
         github: "https://github.com/IvanCSantos/alura-tecboard",
         liveUrl: "https://tecboard.portfolio.ivansantos.dev",
       },
@@ -296,6 +296,14 @@ export const en = {
         liveUrl: "",
       },
       {
+        name: "A.N.I.T.A.",
+        description:
+          "Management of undergraduate and postgraduate courses at universities in the Acafe system - developed via UNIVALI",
+        tags: ["React", "HTML", "CSS", "Javascript"],
+        github: "",
+        liveUrl: "https://anita.labsc.dev.br",
+      },
+      {
         name: "Action Plan API",
         description:
           "A project developed for participation in a selection process for a Full Stack position - Java.",
@@ -328,18 +336,10 @@ export const en = {
     ],
     others: [
       {
-        name: "A.N.I.T.A.",
-        description:
-          "Management of undergraduate and postgraduate courses at universities in the Acafe system - developed via UNIVALI",
-        tags: ["React", "HTML", "CSS", "Javascript"],
-        github: "",
-        liveUrl: "https://anita.labsc.dev.br",
-      },
-      {
         name: "Tecboard",
         description:
           "Technology events publishing portal, developed during Alura's React course",
-        tags: ["React", "HTML", "CSS", "Typescript"],
+        tags: ["React", "HTML", "CSS", "Typescript", "Docker"],
         github: "https://github.com/IvanCSantos/alura-tecboard",
         liveUrl: "https://tecboard.portfolio.ivansantos.dev",
       },
