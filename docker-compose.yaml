@@ -15,7 +15,7 @@ services:
     networks:
       - omd-network
       - alura-tecboard
-    command: '/bin/sh -c ''nginx -g "daemon off;" || (nginx -t && nginx -g "daemon off;")'''
+    command: 'nginx -g "daemon off;"'
 
   # Container para obter e renovar certificados
   certbot:
@@ -25,15 +25,35 @@ services:
     volumes:
       - ./nginx/certbot/www:/var/www/certbot
       - ./certbot-data:/etc/letsencrypt
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do if [ ! -d /etc/letsencrypt/live/planoacao.portfolio.ivansantos.dev ]; then certbot certonly --webroot -w /var/www/certbot --email contato@ivansantos.dev --agree-tos --no-eff-email --force-renewal -d planoacao.portfolio.ivansantos.dev; fi; if [ ! -d /etc/letsencrypt/live/tecboard.portfolio.ivansantos.dev ]; then certbot certonly --webroot -w /var/www/certbot --email contato@ivansantos.dev --agree-tos --no-eff-email --force-renewal -d tecboard.portfolio.ivansantos.dev; fi; certbot renew --quiet; sleep 12h & wait $${!}; done;'"
-    depends_on:
-      - nginx
     networks:
       - omd-network
       - alura-tecboard
+    depends_on:
+      - nginx
+    entrypoint: >
+      /bin/sh -c "
+      echo 'Aguardando o Nginx iniciar...'
+      while ! nc -z nginx 80; do
+        sleep 1;
+      done;
+      echo 'Nginx está pronto, iniciando Certbot...'
+      trap exit TERM;
+      while :; do
+        if [ ! -d /etc/letsencrypt/live/planoacao.portfolio.ivansantos.dev ]; then
+          certbot certonly --webroot -w /var/www/certbot --email contato@ivansantos.dev --agree-tos --no-eff-email -d planoacao.portfolio.ivansantos.dev;
+        fi;
+        if [ ! -d /etc/letsencrypt/live/tecboard.portfolio.ivansantos.dev ]; then
+          certbot certonly --webroot -w /var/www/certbot --email contato@ivansantos.dev --agree-tos --no-eff-email -d tecboard.portfolio.ivansantos.dev;
+        fi;
+        certbot renew --quiet;
+        sleep 12h & wait $${!};
+      done;
+      "
 
 networks:
   omd-network:
+    name: omd-network
     external: true
   alura-tecboard:
+    name: alura-tecboard
     external: true
