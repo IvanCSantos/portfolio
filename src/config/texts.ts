@@ -94,7 +94,15 @@ export const ptBR = {
         description: "Este portfólio que você está vendo",
         tags: ["React", "Typescript", "Javascript", "Tailwind CSS"],
         github: "https://github.com/IvanCSantos/portfolio",
-        liveUrl: "https://ivansantos.dev/",
+        liveUrl: "https://ivansantos.dev",
+      },
+      {
+        name: "Portal Plurio",
+        description:
+          "Portal de administração de tokens de integração de sistemas de assinatura digital do pluriosign, para a empresa Plurio, do grupo Safepar",
+        tags: ["React", "Typescript", "MaterialUI"],
+        github: "",
+        liveUrl: "",
       },
       {
         name: "API Plano de Ação",
@@ -124,18 +132,10 @@ export const ptBR = {
           "Docker",
         ],
         github: "https://github.com/IvanCSantos/omd-planoacao-frontend",
-        liveUrl: "https://planoacao.portfolio.ivansantos.dev/",
+        liveUrl: "https://planoacao.portfolio.ivansantos.dev",
       },
     ],
     others: [
-      {
-        name: "Game API",
-        description:
-          "Um projeto desenvolvido para estudo de Java Spring Boot durante o Intensivão Dev Superior",
-        tags: ["Java", "Java Spring Boot", "Docker"],
-        github: "https://github.com/IvanCSantos/game-api",
-        liveUrl: "",
-      },
       {
         name: "A.N.I.T.A.",
         description:
@@ -145,11 +145,27 @@ export const ptBR = {
         liveUrl: "https://anita.labsc.dev.br",
       },
       {
+        name: "Tecboard",
+        description:
+          "Portal de publicação de eventos de tecnologia, desenvolvido durante o curso de React da Alura",
+        tags: ["React", "HTML", "CSS", "Typescript"],
+        github: "https://github.com/IvanCSantos/alura-tecboard",
+        liveUrl: "https://tecboard.portfolio.dev.br",
+      },
+      {
         name: "Clone Tabnews",
         description:
           "Projeto clone do site tabnews, desenvolvido para estudos com o curso.dev",
         tags: ["Node.js", "Javascript", "Jest", "APIs"],
         github: "https://github.com/IvanCSantos/clone-tabnews",
+        liveUrl: "",
+      },
+      {
+        name: "Game API",
+        description:
+          "Um projeto desenvolvido para estudo de Java Spring Boot durante o Intensivão Dev Superior",
+        tags: ["Java", "Java Spring Boot", "Docker"],
+        github: "https://github.com/IvanCSantos/game-api",
         liveUrl: "",
       },
       {
@@ -269,7 +285,15 @@ export const en = {
         description: "This portfolio you are viewing",
         tags: ["React", "Typescript", "Javascript", "Tailwind CSS"],
         github: "https://github.com/IvanCSantos/portfolio",
-        liveUrl: "https://ivansantos.dev/",
+        liveUrl: "https://ivansantos.dev",
+      },
+      {
+        name: "Plurio Portal",
+        description:
+          "Administration portal for integration tokens of digital signature systems from Pluriosign, for the company Plurio, part of the Safepar group",
+        tags: ["React", "Typescript", "MaterialUI"],
+        github: "",
+        liveUrl: "",
       },
       {
         name: "Action Plan API",
@@ -299,18 +323,10 @@ export const en = {
           "Docker",
         ],
         github: "https://github.com/IvanCSantos/omd-planoacao-frontend",
-        liveUrl: "https://planoacao.portfolio.ivansantos.dev/",
+        liveUrl: "https://planoacao.portfolio.ivansantos.dev",
       },
     ],
     others: [
-      {
-        name: "Game API",
-        description:
-          "A project developed to study Java Spring Boot during the Higher Dev Intensive",
-        tags: ["Java", "Java Spring Boot", "Docker"],
-        github: "https://github.com/IvanCSantos/game-api",
-        liveUrl: "",
-      },
       {
         name: "A.N.I.T.A.",
         description:
@@ -320,11 +336,27 @@ export const en = {
         liveUrl: "https://anita.labsc.dev.br",
       },
       {
+        name: "Tecboard",
+        description:
+          "Technology events publishing portal, developed during Alura's React course",
+        tags: ["React", "HTML", "CSS", "Typescript"],
+        github: "https://github.com/IvanCSantos/alura-tecboard",
+        liveUrl: "https://tecboard.portfolio.dev.br",
+      },
+      {
         name: "Clone Tabnews",
         description:
           "Clone project of the tabnews website, developed for studies with curso.dev",
         tags: ["Node.js", "Javascript", "Jest", "APIs"],
         github: "https://github.com/IvanCSantos/clone-tabnews",
+        liveUrl: "",
+      },
+      {
+        name: "Game API",
+        description:
+          "A project developed to study Java Spring Boot during the Higher Dev Intensive",
+        tags: ["Java", "Java Spring Boot", "Docker"],
+        github: "https://github.com/IvanCSantos/game-api",
         liveUrl: "",
       },
       {
