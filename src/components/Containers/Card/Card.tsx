@@ -1,6 +1,7 @@
 import { Text } from "../../Text/Text";
 import { Tag } from "../../Tag/Tag";
 import { Link } from "../../Link/Link";
+import { Link as LinkIcon, GithubLogo } from "phosphor-react";
 
 type CardProps = {
   title: string;
@@ -17,8 +18,6 @@ export const Card = ({
   github,
   liveUrl,
 }: CardProps) => {
-  const liveString = liveUrl ? `Live: ${liveUrl}` : "";
-
   return (
     <div className="flex flex-col justify-between border rounded-lg p-4 min-h-48 hover:bg-div-hover transition-colors">
       <div className="pb-8">
@@ -27,9 +26,10 @@ export const Card = ({
             <Text
               as="h3"
               variant="link"
-              className="text-md md:text-xl text-primary hover:text-hover"
+              className="flex gap-2 items-center text-md md:text-xl text-primary hover:text-hover"
             >
               {title}
+              <GithubLogo />
             </Text>
           </Link>
         ) : (
@@ -45,17 +45,15 @@ export const Card = ({
           {description}
         </Text>
       </div>
-      <div className="flex flex-col gap-2">
-        {liveUrl ? (
-          <Link url={liveUrl}>
-            <Text className="text-sm md:text-md text-secondary">
-              {liveString}
+      <div className="flex flex-col gap-4">
+        {liveUrl && (
+          <Link url={liveUrl} className="flex items-center gap-2">
+            <Text className="text-secondary">Live:</Text>
+            <Text variant="link" className="break-all">
+              {liveUrl}
+              {/* <LinkIcon size={16} /> */}
             </Text>
           </Link>
-        ) : (
-          <Text className="text-sm md:text-md text-secondary">
-            {liveString}
-          </Text>
         )}
 
         <div className="flex flex-row flex-wrap justify-start gap-x-2 gap-y-1">

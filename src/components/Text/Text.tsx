@@ -3,7 +3,7 @@ import React from "react";
 const textVariants = {
   default: "",
   listItem: "list-disc",
-  link: "text-base cursor-pointer underline underline-offset-2",
+  link: "text-base cursor-pointer underline underline-offset-2 flex gap-2 items-center",
 };
 
 export const Text = ({
