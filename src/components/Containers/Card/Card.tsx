@@ -1,7 +1,7 @@
 import { Text } from "../../Text/Text";
 import { Tag } from "../../Tag/Tag";
 import { Link } from "../../Link/Link";
-import { Link as LinkIcon, GithubLogo } from "phosphor-react";
+import { GithubLogo } from "phosphor-react";
 
 type CardProps = {
   title: string;
