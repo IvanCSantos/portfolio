@@ -150,7 +150,7 @@ export const ptBR = {
           "Portal de publicação de eventos de tecnologia, desenvolvido durante o curso de React da Alura",
         tags: ["React", "HTML", "CSS", "Typescript"],
         github: "https://github.com/IvanCSantos/alura-tecboard",
-        liveUrl: "https://tecboard.portfolio.dev.br",
+        liveUrl: "https://tecboard.portfolio.ivansantos.dev",
       },
       {
         name: "Clone Tabnews",
@@ -341,7 +341,7 @@ export const en = {
           "Technology events publishing portal, developed during Alura's React course",
         tags: ["React", "HTML", "CSS", "Typescript"],
         github: "https://github.com/IvanCSantos/alura-tecboard",
-        liveUrl: "https://tecboard.portfolio.dev.br",
+        liveUrl: "https://tecboard.portfolio.ivansantos.dev",
       },
       {
         name: "Clone Tabnews",
