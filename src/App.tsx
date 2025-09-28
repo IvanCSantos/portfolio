@@ -9,6 +9,7 @@ import { Career } from "./pages/Carreer/Career";
 import { Projects } from "./pages/Projects/Projects";
 import type { Language } from "./config/types";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [lang, setLang] = React.useState<Language>(null);
@@ -47,6 +48,7 @@ function App() {
         </Routes>
       </main>
       <Analytics />
+      <SpeedInsights />
       <Footer lang={lang} />
     </div>
   );
