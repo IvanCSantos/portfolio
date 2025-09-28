@@ -8,6 +8,7 @@ import { About } from "./pages/About/About";
 import { Career } from "./pages/Carreer/Career";
 import { Projects } from "./pages/Projects/Projects";
 import type { Language } from "./config/types";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [lang, setLang] = React.useState<Language>(null);
@@ -45,6 +46,7 @@ function App() {
           <Route path="/projects" element={<Projects lang={lang} />} />
         </Routes>
       </main>
+      <Analytics />
       <Footer lang={lang} />
     </div>
   );
